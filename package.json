@@ -1,5 +1,7 @@
 {
   "name": "lineageos_installer",
+  "productName": "LineageOS Installer",
+  "description": "Official LineageOS Installer App",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
