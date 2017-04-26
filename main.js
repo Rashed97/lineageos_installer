@@ -1,5 +1,3 @@
-'use strict';
-
 var electron = require('electron');
 var app = electron.app;
 var BrowserWindow = electron.BrowserWindow;
@@ -8,7 +6,9 @@ var mainWindow = null;
 
 app.on('ready', function() {
     mainWindow = new BrowserWindow({
+        titleBarStyle: process.platform === 'darwin' ? 'hidden-inset' : 'default',
         height: 600,
+        resizable: false,
         width: 800
     });
 
