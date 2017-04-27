@@ -6,7 +6,7 @@ var mainWindow = null;
 
 app.on('ready', function() {
     mainWindow = new BrowserWindow({
-        title: electron.app.getProductName(),
+        title: electron.app.getName(),
         titleBarStyle: process.platform === 'darwin' ? 'hidden-inset' : 'default',
         height: 600,
         resizable: false,

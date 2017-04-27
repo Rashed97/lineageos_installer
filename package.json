@@ -5,9 +5,20 @@
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ./ lineageos_installer --all --out ~/lineageos_installer --version 0.1.0 --overwrite --icon=./app/img/lineage_avatar_circle_256.icns"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rashed97/lineageos_installer.git"
   },
+  "author": {
+    "name": "Rashed Abdel-Tawab",
+    "email": "rashed@lineageos.org"
+  },
+  "license": "GPLv2",
   "devDependencies": {
-    "electron": "^1.6.6"
+    "electron": "^1.6.6",
+    "electron-packager": "^8.6.0"
   }
 }
